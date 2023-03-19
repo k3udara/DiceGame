@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">DiceGame</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="about">About</string>
+    <string name="new_gaame">New Game</string>
+    <string name="gameName">Dice Game</string>
+    <string name="your_score">Your Score</string>
+    <string name="playerdiceimage">playerdice</string>
+
+    <string name="computer_score">Computer Score</string>
+    <string name="zero">0</string>
+    <string name="player_dices">Player Dices</string>
+    <string name="score">score</string>
+    <string name="throw1">Throw</string>
+    <string name="you_won">You won !!</string>
+    <string name="play_again">Play Again</string>
+    <string name="you_lost">You lost !!</string>
+    <string name="play_again_lost">Play Again</string>
+    <string name="computer_dices">Computer Dices</string>
+    <string name="win_score">Win Score:</string>
+    <string name="update_score">Update Score</string>
+
+</resources>

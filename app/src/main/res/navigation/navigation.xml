@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/titlefragment">
+    <fragment
+        android:id="@+id/titlefragment"
+        android:name="com.example.dicegame.titlefragment"
+        android:label="titlefragment" >
+        <action
+            android:id="@+id/action_titlefragment_to_playGameFragment"
+            app:destination="@id/playGameFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/playGameFragment"
+        android:name="com.example.dicegame.playGameFragment"
+        android:label="playGameFragment" >
+        <action
+            android:id="@+id/action_playGameFragment_to_wonFragment"
+            app:destination="@id/wonFragment" />
+        <action
+            android:id="@+id/action_playGameFragment_to_lostFragment"
+            app:destination="@id/lostFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/wonFragment"
+        android:name="com.example.dicegame.WonFragment"
+        android:label="WonFragment" >
+        <action
+            android:id="@+id/action_wonFragment_to_playGameFragment"
+            app:destination="@id/playGameFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/lostFragment"
+        android:name="com.example.dicegame.LostFragment"
+        android:label="fragment_lost"
+        tools:layout="@layout/fragment_lost" >
+        <action
+            android:id="@+id/action_lostFragment_to_playGameFragment"
+            app:destination="@id/playGameFragment" />
+    </fragment>
+</navigation>

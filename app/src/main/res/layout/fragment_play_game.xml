@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.dicegame.gamePlayFragement">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android.orientation="vertical">
+
+        <TextView
+            android:id="@+id/yourScoreText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="176dp"
+            android:layout_marginTop="53dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="32dp"
+            android:text="@string/your_score"
+            android:textColor="#121111"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/computerText"
+            app:layout_constraintEnd_toStartOf="@+id/yourScroreValue"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/yourScroreValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="80dp"
+            android:layout_marginBottom="52dp"
+            android:text="@string/zero"
+            android:textColor="#0C0C0C"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/textView3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/yourScoreText"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.312" />
+
+        <TextView
+            android:id="@+id/computerText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="155dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/computer_score"
+            android:textColor="#131111"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/computerScoreValue"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/yourScoreText"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/computerScoreValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="43dp"
+            android:layout_marginTop="77dp"
+            android:layout_marginEnd="100dp"
+            android:layout_marginBottom="96dp"
+            android:text="@string/zero"
+            android:textColor="#0B0A0A"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/computerText"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="140dp"
+            android:layout_marginTop="21dp"
+            android:layout_marginEnd="140dp"
+            android:layout_marginBottom="22dp"
+            android:text="@string/player_dices"
+            android:textColor="#E91E63"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/computerText"
+            tools:ignore="MissingConstraints" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="200dp"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+                android:id="@+id/pd1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/playerdiceimage"
+                android:src="@drawable/dice_1" />
+
+
+            <ImageView
+                android:id="@+id/pd2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/playerdiceimage"
+                android:src="@drawable/dice_1" />
+
+
+            <ImageView
+                android:id="@+id/pd3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/playerdiceimage"
+                android:src="@drawable/dice_1" />
+
+            <ImageView
+                android:id="@+id/pd4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/playerdiceimage"
+                android:src="@drawable/dice_1" />
+
+            <ImageView
+                android:id="@+id/pd5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/playerdiceimage"
+                android:src="@drawable/dice_1" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="34dp"
+
+            android:layout_marginEnd="120dp"
+            android:layout_marginBottom="14dp"
+            android:text="@string/computer_dices"
+            android:textColor="#E91E63"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/winScore"
+            android:layout_width="147dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="248dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="16dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="@string/win_score"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+        <Button
+            android:id="@+id/UpdateScoreBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="261dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="90dp"
+            android:layout_marginBottom="29dp"
+            android:backgroundTint="#00BCD4"
+            android:text="@string/update_score"
+            app:layout_constraintBottom_toTopOf="@+id/shuffle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/winScore" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="380dp"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+                android:id="@+id/cd1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/playerdiceimage"
+                android:src="@drawable/dice_1" />
+
+            <ImageView
+                android:id="@+id/cd2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/playerdiceimage"
+                android:src="@drawable/dice_1" />
+
+
+            <ImageView
+                android:id="@+id/cd3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/playerdiceimage"
+                android:src="@drawable/dice_1" />
+
+
+            <ImageView
+                android:id="@+id/cd4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/playerdiceimage"
+                android:src="@drawable/dice_1" />
+
+            <ImageView
+                android:id="@+id/cd5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/playerdiceimage"
+                android:src="@drawable/dice_1" />
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/Score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="163dp"
+            android:layout_marginEnd="60dp"
+            android:layout_marginBottom="40dp"
+            android:backgroundTint="#2196F3"
+            android:text="@string/score"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/shuffle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+        <Button
+            android:id="@+id/shuffle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="57dp"
+            android:layout_marginTop="94dp"
+            android:layout_marginEnd="100dp"
+            android:layout_marginBottom="40dp"
+            android:backgroundTint="#2196F3"
+            android:text="@string/throw1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/Score"
+            app:layout_constraintTop_toBottomOf="@+id/winScore" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
